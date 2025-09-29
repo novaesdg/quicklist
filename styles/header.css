@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  & span {
+    font: 700 1.68rem/1.25 var(--ff-sans);
+    color: var(--content-secondary);
+  }
+}

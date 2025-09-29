@@ -35,3 +35,15 @@
 html {
   background-color: var(--bg-primary);
 }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
