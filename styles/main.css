@@ -1,2 +1,144 @@
+main {
+  margin-top: 1.5rem;
+  width: 80%;
 
+  & section {
+    & a:first-child {
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+
+      & span {
+        font: var(--link);
+        color: var(--color-brand);
+      }
+    }
+
+    & h1 {
+      margin-top: 1.25rem;
+      font: var(--title);
+      color: var(--content-primary);
+    }
+  }
+
+  & form {
+    margin-top: 2.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & input {
+      padding: .875rem 1.25rem;
+      background-color: var(--bg-secondary);
+      border: 3px solid var(--border-primary);
+      border-radius: 1rem;
+
+      font-family: var(--ff-sans);
+      font-size: 1rem;
+      color: var(--content-tertiary);
+
+      &:hover {
+        border-color: var(--border-hover);
+      }
+
+      &:focus {
+        color: var(--content-primary);
+        outline: none;
+        border-color: var(--color-brand);
+      }
+    }
+
+    & button {
+      padding: .875rem 1.25rem;
+      background-color: var(--color-brand);
+      border-radius: 1rem;
+      cursor: pointer;
+
+      font: var(--label);
+      color: var(--always-white);
+
+      &:hover {
+        background-color: var(--color-brand-hover);
+      }
+    }
+  }
+
+  & ul {
+    margin-top: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+
+    & li {
+      padding: 1rem 1.25rem;
+      background-color: var(--bg-secondary);
+      border-radius: .75rem;
+
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+
+      & input.item-checkbox {
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        background: url(../assets/icons/check.svg) no-repeat center/contain;
+        cursor: pointer;
+      }
+
+      & input.item-checkbox:checked {
+        background: url(../assets/icons/check-checked.svg) no-repeat center/contain;
+      }
+    
+      & p {
+        margin-right: auto;
+
+        font: var(--paragraph);
+        color: var(--content-secondary);
+      }
+    }
+  }
+}
+
+#alert {
+  margin-top: 2.25rem;
+
+  & div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    padding: 1rem 1.25rem;
+    background-color: var(--color-danger);
+    border-radius: .75rem;
+
+    & p {
+      margin-right: auto;
+
+      font: var(--label);
+      color: var(--always-white);
+    }
+  }
+}
+
+@media (width >= 80em) {
+  main {
+    margin-top: 4rem;
+    width: 45rem;
+
+    & form {
+      flex-direction: row;
+
+      & input {
+        flex: 3;
+      }
+
+      & button {
+        flex: 1;
+        border: none;
+      }
+    }
+  }
+}
 

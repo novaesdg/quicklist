@@ -19,7 +19,48 @@
   </header>
 
   <main>
-    
+    <section>
+      <a href="#">
+        <img src="assets/icons/arrow-left.svg" alt="Ícone de seta apontando para esquerda">
+        <span>Voltar</span>
+      </a>
+      <h1>Compras da semana</h1>
+    </section>
+
+    <form action="post">
+      <input 
+      type="text"
+      id="item"
+      name="item"
+      placeholder="Adicione um novo item">
+      <button type="submit">Adicionar item</button>
+    </form>
+
+    <ul>
+      <li>
+        <input type="checkbox" class="item-checkbox">
+        <p>Teste1</p>
+        <img src="assets/icons/delete.svg" alt="Ícone de delete">
+      </li>
+      <li>
+        <input type="checkbox" class="item-checkbox">
+        <p>Teste2</p>
+        <img src="assets/icons/delete.svg" alt="Ícone de delete">
+      </li>
+      <li>
+        <input type="checkbox" class="item-checkbox">
+        <p>Teste3</p>
+        <img src="assets/icons/delete.svg" alt="Ícone de delete">
+      </li>
+    </ul>
+
+    <section id="alert">
+      <div>
+        <img src="assets/icons/alert.svg" alt="Ícone de alerta">
+        <p>O item foi removido da lista</p>
+        <img src="assets/icons/close.svg" alt="Ícone de fechar o alerta">
+      </div>
+    </section>
   </main>
   <script src="scripts.js"></script>
 </body>

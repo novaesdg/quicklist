@@ -26,10 +26,10 @@
   /* TYPOGRAPHY */
   --ff-sans: "Inter", sans-serif;
 
-  --title: 700 1.5rem/2rem var(--ff-sans);
+  --title: 700 1.75rem/2rem var(--ff-sans);
   --label: 600 1rem/1.25rem var(--ff-sans);
   --paragraph: 500 1rem/1.25rem var(--ff-sans);
-  --link: 500 .875rem/1rem var(--ff-sans);
+  --link: 500 1rem/1rem var(--ff-sans);
 }
 
 html {
@@ -38,6 +38,7 @@ html {
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 2rem;
@@ -46,4 +47,8 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+ul {
+  list-style: none;
 }
