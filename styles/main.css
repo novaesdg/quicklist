@@ -98,10 +98,14 @@ main {
         font: var(--paragraph);
         color: var(--content-secondary);
       }
+
+      & img {
+        cursor: pointer;
+      }
     }
   }
 
-  & #alert {
+  & #alert-box {
     margin-top: 2.25rem;
     display: none;
   
@@ -119,6 +123,10 @@ main {
   
         font: var(--label);
         color: var(--always-white);
+      }
+
+      & p + img {
+        cursor: pointer;
       }
     }
 
